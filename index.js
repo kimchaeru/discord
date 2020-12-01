@@ -1,6 +1,6 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
-const { token } = require('./config.json');
+const token = process.env.token;
 
 const { readdirSync } = require('fs');
 const { join } = require('path');
